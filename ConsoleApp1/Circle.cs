@@ -8,26 +8,18 @@ namespace GeometricShapeCalculatorTestTask
 {
     public class Circle : IFigure
     {
-        // Площадь круга
-        //в параметры передавать число pi(х) и радиус(r)
+        // Площадь круга        
         public double Area(double x, double y)
         {
             double result;
-            if (x == Math.PI)
-                result = x * Math.Pow(y, 2);
-            else
-                result = 0;
+            result = Math.PI * Math.Pow(x, 2);
             return result;
         }
-        // Длина окружности для круга
-        //в параметры передавать число pi(х) и радиус(r)
+        // Длина окружности для круга        
         public double Perimeter(double x, double y)
         {
             double result;
-            if (x == Math.PI)
-                result = 2 * x * y;
-            else
-                result = 0;
+            result = 2 * Math.PI * x;
             return result;
         }
     }
