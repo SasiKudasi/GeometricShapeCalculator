@@ -43,7 +43,7 @@ namespace GeometricShapeCalculatorTestTask
             {
                 _logger.Logers("Вы ввели неверные параметры");
             }
-
+            _logger.Logers("Конец расчёта.");
             return result;
         }
     }
